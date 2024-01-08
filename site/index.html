@@ -2,10 +2,87 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello Coursera!</title>
+	<title>Assignment Solution for Module 2</title>
 </head>
+
+<style>
+
+	* {box-sizing: border-box;
+		margin: 0;
+		padding: 0;}
+
+	body {font-family: Arial, Helvetica, sans-serif; }
+
+	@media (min-width: 992px) {
+
+		.DishItem { width: 32%; }
+
+	}
+
+	@media (min-width: 768px) and (max-width: 991px) {
+
+		.DishItem { width: 48%; }
+
+		#sushiItem { width: 97%; }
+	} 
+
+	@media (max-width: 767px) {
+
+		.DishItem { width: 97%; }
+	}
+
+	.DishItem {	background-color: grey; 
+				border: 1px solid black; 
+				border-top: 0px; 
+				border-right: 0 px; 
+				margin-top: 20px;
+				margin-left: 10px;
+				height: 150px; 
+				float: left;
+				overflow: hidden;}
+
+	.DishDescriptor { padding: 10px 10px 10px 10px; }
+
+	.FoodItemTitle {margin: 0; 
+					padding: 0; 
+					text-font-weight: bold;
+					text-align: center;
+					border: 1px solid black; 
+					width: 40%;
+					position: relative;
+					left: 60%;
+					}
+
+	#chickenTitle {background-color: rosybrown;}
+
+	#beefTitle {background-color: darkred; 
+				color: white;}
+
+	#sushiTitle {background-color: orange;}
+
+</style>
+
 <body>
-<h1>Hello Coursera!!!!! Ready for a great course!!!</h1>
+
+	<div>
+		<h1 style="text-align: center; margin-top: 10px;">Our Menu</h1>
+	<div>
+
+	<div class="DishItem">
+		<h2 id="chickenTitle" class="FoodItemTitle">Chicken</h2>
+		<p class="DishDescriptor">This is the chicken option, lorem ipsum and more text</p>
+	</div>
+
+	<span>
+	<div class="DishItem">
+		<h2 id="beefTitle" class="FoodItemTitle">Beef</h2>
+		<p class="DishDescriptor">This is the beef option, lorem ipsum and a little more text, just to go one line down.</p>
+	</div>
+
+	<div id = "sushiItem" class="DishItem">
+		<h2 id="sushiTitle" class="FoodItemTitle">Sushi</h2>
+		<p class="DishDescriptor">This is the fishy option, lorem ipsum and more text to make this bigger. This is a really long description that will take far more space.</p>
+	</div>
+
 </body>
 </html>
